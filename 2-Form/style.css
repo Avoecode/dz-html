@@ -1,0 +1,59 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    background: linear-gradient(225deg, #fdc5c5 25.45%, #F298DE 100%),
+                linear-gradient(225deg, #ffa5a5 33.09%, #FFFFFF 82.34%);
+    background-color: #F39494;
+}
+p {
+   font-weight: 400;
+   font-size: 18px;
+   color: #666;
+}
+button {
+   background-color: #089fe0;
+   font-size: 18px;
+   color: #FFFFFF;
+   font-weight: 400;
+}
+.register input {
+   background-color: #F5F5F5;
+   font-size: 16px;
+   font-weight: 400;
+   font-style: italic;
+   color: #999;
+}
+ .container {
+    width: 582px;
+    height: 573px;
+    background-color: #FFFEFE;
+    font-family:'Open Sans',sans-serif;
+ }
+ .heading {
+    font-weight: 700;
+    font-size: 36px;
+    color: #333;
+ }
+ .container a {
+    color: #089fe0;
+ }
+ .checkbox {
+   font-weight: 400;
+   font-size: 14px;
+   color: #666;
+ }
+ .checkbox a {
+   text-decoration: none;
+ }
+ 
+
+
+
+
+
+

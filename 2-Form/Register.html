@@ -5,38 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Форма регистрации</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main>
-       <div>
-          <div>
+       <div class="container">
+          <div class="heading">
                <span>Регистрация</span>
                <p>Уже есть аккаунт&#63 <a href="#" target="_blank">Войти</a></p>
           </div>
-
-          <form action="#">
-               <input type="text"
-                      placeholder="Компания"
-                      name="company"
-                      id="company">
-
-               <div>
-                  <input type="text"
-                         placeholder="Имя" 
-                         name="firs_tname"
-                         id="firstname">
-                  <input type="text" 
-                         placeholder="Фамилия" 
-                         name="last_name"
-                         id="lastname">
-               </div>
-                 <input type="email" 
-                        placeholder="E-mail" 
-                        name="email"
-                        id="E-mail">
-                 <button type="submit">Зарегистрироваться</button>
-               <div>
+          <form action="#" class="registerform">
+              <input type="text"
+                     placeholder="Компания" 
+                     name="company" 
+                     id="company">
+              <div class="first_last_name">
+                   <input type="text"
+                          placeholder="Имя" 
+                          name="first_tname" 
+                          id="firstname">
+              
+                   <input type="text" 
+                          placeholder="Фамилия" 
+                          name="last_name" 
+                          id="lastname">
+              </div>    
+              <input type="email" 
+                      placeholder="E-mail" 
+                      name="email"
+                      id="E-mail">
+              <button type="submit">Зарегистрироваться</button>
+              <div class="checkbox">
                   <input type="checkbox" 
                          name="agreement" 
                          id="agreement" 
