@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    margin: 0;
+}
+header {
+    font-weight: 400;
+    padding: 80px 180px; 
+    font-family: 'Roboto', sans-serif;
+}
+i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15); 
+}
+i span {
+    font-family: 'Source sans pro', sans-serif;
+    font-weight: 600;
+    background-color: #4b5563;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+nav a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 100%; 
+}
+ul {
+    list-style-type: none;
+}
+article {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    margin: 0 0 30px 0;
+}
+section {
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+section img {
+    border-radius: 5px;
+    width: 896px;
+    height: 594px;
+    margin: 0 272px 69px 272px;
+}
+section .text {
+    margin: 0 366px 103px 366px;
+}
+footer {
+    font-family: 'Roboto', sans-serif;
+}
+.logo a {
+    font-size: 18px;
+    line-height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+}
+.myblog {
+    padding: 8px 0 6px 11px;
+}
+#search_form {
+    background-color: #1F2937;
+    font-size: 16px;
+    border-radius: 100px;
+    opacity: 60%;
+    border-style: none;
+    width: 224px;
+    height: 40px; 
+    color: #ffffff;
+    margin-bottom: 80px;
+}
+.search input {
+   padding: 5px 10px;
+}
+.title p {
+    opacity: 60%;
+    margin-top: 14px;
+    text-align: center;
+}
+.title h1 {
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+}
+.img_name {
+    margin: 0 0 28px 0;
+}
+.name {
+    font-size: 16px;
+    line-height: 175%;
+}
+.profession {
+    line-height: 200%;
+    opacity: 60%;
+}
+.text p:first-child {
+    font-size: 20px;
+    line-height: 32px;
+}
+.text p  {
+    font-size: 16px;
+    line-height: 30px;
+}
+.text span {
+    text-decoration: underline;
+}
+.footer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 60%;
+    text-decoration: none;
+    margin-top: 77px;
+}
