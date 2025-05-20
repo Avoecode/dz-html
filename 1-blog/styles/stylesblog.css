@@ -10,24 +10,11 @@ header {
     padding: 80px 180px; 
     font-family: 'Roboto', sans-serif;
 }
-i {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15); 
-}
-i span {
-    font-family: 'Source sans pro', sans-serif;
-    font-weight: 600;
-    background-color: #4b5563;
-    padding: 6px 12px;
-    border-radius: 3px;
-}
-nav a {
+header a {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
-    line-height: 100%; 
+    line-height: 100%;
 }
 ul {
     list-style-type: none;
@@ -40,6 +27,9 @@ article {
 }
 h1 {
     margin: 0 0 30px 0;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
 }
 section {
     color: #ffffff;
@@ -55,9 +45,26 @@ section img {
 section .text {
     margin: 0 366px 103px 366px;
 }
+
 footer {
     font-family: 'Roboto', sans-serif;
 }
+.icon div {
+    width: 35px;
+    height: 35px;
+    background-color: #4b5563;
+    border-radius: 3px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15); 
+    display: inline-block;
+}
+.icon   {
+    font-family: 'Source sans pro', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
 .logo a {
     font-size: 18px;
     line-height: 100%;
@@ -67,32 +74,24 @@ footer {
 .myblog {
     padding: 8px 0 6px 11px;
 }
-#search_form {
-    background-color: #1F2937;
+form {
+    position: relative;
+}
+form input {
+   padding: 9px 128px 12px 49px;
+   margin-left: auto;
+}
+form label {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+}
+
+.heading  {
     font-size: 16px;
-    border-radius: 100px;
-    opacity: 60%;
-    border-style: none;
-    width: 224px;
-    height: 40px; 
-    color: #ffffff;
-    margin-bottom: 80px;
-}
-.search input {
-   padding: 5px 10px;
-}
-.title p {
     opacity: 60%;
     margin-top: 14px;
     text-align: center;
-}
-.title h1 {
-    font-size: 24px;
-    line-height: 38px;
-    text-align: center;
-}
-.img_name {
-    margin: 0 0 28px 0;
 }
 .name {
     font-size: 16px;
@@ -101,6 +100,7 @@ footer {
 .profession {
     line-height: 200%;
     opacity: 60%;
+    margin: 0 0 28px 0;
 }
 .text p:first-child {
     font-size: 20px;
@@ -122,4 +122,16 @@ footer {
     opacity: 60%;
     text-decoration: none;
     margin-top: 77px;
+}
+#search_form {
+    background-color: #1F2937;
+    font-size: 16px;
+    border-radius: 100px;
+    opacity: 60%;
+    border-style: none;
+    width: 224px;
+    height: 40px;
+    color: #ffffff;
+    margin-bottom: 80px;
+
 }
