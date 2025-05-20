@@ -5,18 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой блог</title>
+    <link rel="stylesheet" href="./styles/stylesblog.css">
 </head>
-
 <body>
     <header>
-        <div class='logo'>
-            <ul>
-                <li>В</li>
-                <li>
-                    <a href="#">Мой блог</a>
-                </li>
-            </ul>
-        </div>
+            <a href="#" class="icon">
+                <span>В</span>
+                Мой блог
+            </a>
         <nav>
             <ul>
                 <li>
@@ -30,36 +26,27 @@
                 </li>
             </ul>
         </nav>
-        <div class='search'>
             <form action="#">
+                <label for="search_form"><img src="./images/search.svg" alt="Иконка поиска"></label>
                 <input 
                 type="text" 
                 placeholder="Поиск" 
                 name="search_form" 
                 id="search_form">
             </form>
-        </div>
     </header>
     <article>
-        <div>
-            <p>
-                <span>FRONTEND</span>
-                <span>&bull;</span>
-                <time datetime="2024-05-12">12 мая 2024</time>
-            </p>
+        <p class="heading">
+            FRONTEND &bull;<time datetime="2024-05-12">12 мая 2024</time>
+        </p>
             <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
-            <div>
-                <img src="./images/debdc3f275a19554e34f56b7ae22bd8b.png" alt="Изображение автора">
-            </div>
-            <div>
-                <p>Наталья Васильева</p>
-                <p>Разработчик</p>
-            </div>
-        </div>
-
-        <section>
+            <img src="./images/debdc3f275a19554e34f56b7ae22bd8b.png" alt="Изображение автора">
+            <p class="name">Наталья Васильева</p>
+            <p class="profession">Разработчик</p>
+    </article>
+    <section>
             <img src="./images/4f3f91ff718dae25d01f84692996a2cd.png" alt="Изображение монитора">
-            <div>
+            <div class="text">
                 <p>Теория цвета — это особенности эмоционального восприятия человеком тех или иных цветовых решений.
                     Цвета и
                     различные
@@ -73,7 +60,6 @@
                     положительное отношение к продукту, подтолкнуть посетителей к совершению целевых действий, повысить
                     конверсию.
                 </p>
-
                 <p>Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет. Эмоциональная и
                     поведенческая
                     реакция каждого человека зависит от личного опыта. Вместе с тем можно выделить определенные
@@ -81,8 +67,7 @@
                     влияния
                     цветов на поведение пользователей.
                 </p>
-
-                <p>В исследовании «Влияние цвета на маркетинг» (Impact of color on marketing) говорится, что
+                <p>В исследовании «Влияние цвета на маркетинг» (<span>Impact of color on marketing</span>) говорится, что
                     использование
                     разных
                     цветов
@@ -93,9 +78,8 @@
                     цветt.
                 </p>
             </div>
-        </section>
-    </article>
+    </section>
     <footer>
-        <p>Все права защищены &copy; 2024</p>
+        <p class="footer">Все права защищены &copy;2024</p>
     </footer>
 </body>
