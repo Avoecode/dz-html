@@ -1,59 +1,161 @@
+* {
+   box-sizing: border-box;
 
+}
 body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+   background: linear-gradient(225deg, #fdc5c5 25.45%, #F298DE 100%),
+         linear-gradient(225deg, #ffa5a5 33.09%, #FFFFFF 82.34%);
+   background-color:  #F39494;
+   height: 100%;
+   font-family: 'Open Sans', sans-serif;
+   margin: 0;
 }
+
 main {
-    background: linear-gradient(225deg, #fdc5c5 25.45%, #F298DE 100%),
-                linear-gradient(225deg, #ffa5a5 33.09%, #FFFFFF 82.34%);
-    background-color: #F39494;
+   max-width: 1440px;
+   margin: 0 auto; 
 }
+
+form {
+   
+   background-color: #FFFEFE;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   padding: 72px 94px 91px;
+   transform: translate(-50%, -50%);
+   max-width: 582px;
+   border-radius: 10px;
+   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 22px 1px;
+}
+
+h1 {
+   font-size: 36px;
+   line-height: 54px;
+   color: #333;
+   margin: 0;
+}
+
 p {
    font-weight: 400;
    font-size: 18px;
    color: #666;
+   margin: 0;
 }
-button {
-   background-color: #089fe0;
-   font-size: 18px;
-   color: #FFFFFF;
-   font-weight: 400;
+
+a {
+   text-decoration: none;
+   font-size: 14px;
+   color: #089fe0;
 }
-.register input {
-   background-color: #F5F5F5;
-   font-size: 16px;
-   font-weight: 400;
-   font-style: italic;
-   color: #999;
+
+label {
+   color: #666;
+   font-size: 14px;
 }
- .container {
-    width: 582px;
-    height: 573px;
-    background-color: #FFFEFE;
-    font-family:'Open Sans',sans-serif;
- }
- .heading {
-    font-weight: 700;
-    font-size: 36px;
-    color: #333;
- }
- .container a {
-    color: #089fe0;
- }
- .checkbox {
+
+span {
    font-weight: 400;
    font-size: 14px;
    color: #666;
- }
- .checkbox a {
-   text-decoration: none;
- }
- 
+}
 
+input[type='checkbox'] {
+   opacity: 0;
+}
 
+input:not([type="checkbox"]) {
+   color: #999;
+   width: 100%;
+   font-style: 16px;
+   font-style: italic;
+   border: 0;
+   line-height: 26px;
+   background-color: #f5f5f5;
+   border-radius: 5px;
+   border: 1px solid #f5f5f5;
+   caret-color: #089FE0;
+   padding: 9px 35px 9px 11px;
+}
 
+button {
+   background: url(./images/arrow.svg) no-repeat right 24px center #089fe0;
+   font-size: 18px;
+   color: #FFFFFF;
+   font-weight: 400;
+   width: 100%;
+   border: 0;
+   padding: 9px 12px;
+   border-style: none;
+   border-radius: 5px;
+}
 
+input:not([type="checkbox"]):focus {
+   background-color: #fff;
+   color: #333;
+   font-style: normal;
+   font-weight: 600;
+}
 
+.heading {
+   margin-bottom: 25px;
+   text-align: center;
+}
 
+.heading a {
+   font-size: 18px;
+   text-decoration: underline;
+}
+
+.conditions {
+   align-items: flex-start;
+   position: relative;
+}
+
+.conditions input {
+   width: auto;
+}
+
+.conditions_use {
+   padding-left: 8px;
+}
+
+.field {
+   display: flex;
+   gap: 1px;
+   width: 100%;
+}
+
+.field input:first-child {
+   border-radius: 5px 0 0 5px;
+}
+
+.field input:last-child {
+   border-radius: 0 5px 5px 0;
+}
+
+input[type='checkbox']:checked+label[for='checkbox']::before {
+   background-color: #089fe0;
+   content: "\2714";
+   padding: 0 3px;
+   color: white;
+}
+
+label[for='checkbox']::before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-block;
+   margin: 2px;
+   padding: 7px;
+   border-radius: 5px;
+   border: 1px solid #eeeeee;
+   background-color: #f5f5f5;
+   font-size: 11px;
+}

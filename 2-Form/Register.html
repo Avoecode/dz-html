@@ -1,54 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Форма регистрации</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet">
+		<title>Форма регистрации</title>
+	</head>
 
-<body>
-  <main>
-       <div class="container">
-          <div class="heading">
-               <span>Регистрация</span>
-               <p>Уже есть аккаунт&#63 <a href="#" target="_blank">Войти</a></p>
-          </div>
-          <form action="#" class="registerform">
-              <input type="text"
-                     placeholder="Компания" 
-                     name="company" 
-                     id="company">
-              <div class="first_last_name">
-                   <input type="text"
-                          placeholder="Имя" 
-                          name="first_tname" 
-                          id="firstname">
-              
-                   <input type="text" 
-                          placeholder="Фамилия" 
-                          name="last_name" 
-                          id="lastname">
-              </div>    
-              <input type="email" 
-                      placeholder="E-mail" 
-                      name="email"
-                      id="E-mail">
-              <button type="submit">Зарегистрироваться</button>
-              <div class="checkbox">
-                  <input type="checkbox" 
-                         name="agreement" 
-                         id="agreement" 
-                         required>
-                  <label for="agreement">
-                       <span>Я прочитал и принимаю</span>
-                       <a href="#" target="_blank">Условия использования</a>
-                  </label>
-               </div>
-          </form>
-      </div>
-  </main>
-</body>
+	<body>
+		<main>
+			<form action="#" id="">
+				<div class="heading">
+					<h1>Регистрация</h1>
+					<p>Уже есть аккаунт&#63 <a href="#" target="blank">Войти</a></p>
+				</div>
+				<input type=" text" name="company" placeholder="Компания" value="Моя компания">
+				<div class="field">
+					<input type="text" name="firstname" placeholder="Имя">
+					<input type="text" name="lastname" placeholder="Фамилия">
+				</div>
+				<input type="email" name="email" placeholder="E-mail">
+				<button type="submit">Зарегистрироваться</button>
+				<div class="conditions">
+					<input type="checkbox" name="agreement" id="checkbox" required>
+					<label for="checkbox">Я прочитал и принимаю <a class="conditions_use" href="#"
+							target="blank">Условия использования</a>
+					</label>
+				</div>
+			</form>
+		</main>
+	</body>
 
 </html>
