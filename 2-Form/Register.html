@@ -4,41 +4,35 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Форма регистрации</title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet">
+		<title>Форма регистрации</title>
 	</head>
 
 	<body>
 		<main>
-			<div class="container">
-				<h1>Регистрация</h1>
-				<p>Уже есть аккаунт&#63 <a href="#" target="blank">Войти</a></p>
-				<form action="#" class="container_register" id="formregister">
-					<input type=" text" placeholder="Компания" name="company" id="company" class="item">
-					<div class="first_last_name">
-						<input type="text" placeholder="Имя" name="first_name" id="firstname" class="item item1">
-						<input type="text" placeholder="Фамилия" name="last_name" id="lastname" class="item item2">
-					</div>
-					<input type="email" placeholder="E-mail" name="email" id="E-mail" class="item">
-					<button type="submit">
-						Зарегистрироваться
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M23.0607 13.0607C23.6464 12.4749 23.6464 11.5251 23.0607 10.9393L13.5147 1.3934C12.9289 0.807611 11.9792 0.807611 11.3934 1.3934C10.8076 1.97919 10.8076 2.92893 11.3934 3.51472L19.8787 12L11.3934 20.4853C10.8076 21.0711 10.8076 22.0208 11.3934 22.6066C11.9792 23.1924 12.9289 23.1924 13.5147 22.6066L23.0607 13.0607ZM11 12V13.5H16.5V12V10.5H11V12ZM16.5 12V13.5H22V12V10.5H16.5V12ZM0 12V13.5H6V12V10.5H0V12ZM6 12V13.5H11V12V10.5H6V12Z"
-								fill="white">
-						</svg>
-					</button>
-					<div class="checkbox">
-						<input type="checkbox" class="checkbox-input" name="agreement" id="agreement" required>
-						<label for="agreement">
-							<span>Я прочитал и принимаю</span>
-							<a href="#" target="blank">Условия использования</a>
-						</label>
-					</div>
-				</form>
-			</div>
-
-
+			<form action="#" id="">
+				<div class="heading">
+					<h1>Регистрация</h1>
+					<p>Уже есть аккаунт&#63 <a href="#" target="blank">Войти</a></p>
+				</div>
+				<input type=" text" name="company" placeholder="Компания" value="Моя компания">
+				<div class="field">
+					<input type="text" name="firstname" placeholder="Имя">
+					<input type="text" name="lastname" placeholder="Фамилия">
+				</div>
+				<input type="email" name="email" placeholder="E-mail">
+				<button type="submit">Зарегистрироваться</button>
+				<div class="conditions">
+					<input type="checkbox" name="agreement" id="checkbox" required>
+					<label for="checkbox">Я прочитал и принимаю <a class="conditions_use" href="#"
+							target="blank">Условия использования</a>
+					</label>
+				</div>
+			</form>
 		</main>
 	</body>
 
