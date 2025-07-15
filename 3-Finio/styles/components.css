@@ -1,0 +1,93 @@
+/* Section */
+.section-tariff { 
+    max-width: var(--layout-width);
+    width: 100%;
+    padding: 80px 24px;
+}
+
+/* Headling */
+
+.headling {
+    text-align: center;
+}
+
+.headling__top {
+    margin-bottom: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: var(--font-weight-600);
+    font-size: 48px;
+    line-height: var(--line-height-120);
+    text-align: center;
+    color: var(--color-text-black);
+}
+
+.headling__bottom {
+    margin: 0 0 40px 0;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: var(--line-height);
+    text-align: center;
+    color: var(--color-text-grey);
+}
+
+/* Tariff-card */
+
+.tariff_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1156px;
+    margin: 0 auto;
+}
+
+/* Button */
+
+.button {
+    border-radius: 47px;
+    padding: 12px 63px;
+    width: 289px;
+    height: 48px;
+    background: var(--color-bg-blue);
+    border: none;
+    font-weight: var(--font-weight-800);
+    font-size: 17px;
+    line-height: var(--line-height-140);
+    color: var(--color-bg-white);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button:hover {
+    background: var(--color-bg-button-hover);
+}
+
+.button_active {
+    background: var(--color-bg-white);
+    color: var(--color-bg-blue);
+}
+
+.button_active:hover {
+    background: #ffffffd5;
+}
+
+@media (max-width:1200px) {
+    .tariff_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:820px) {
+    .tariff_wrapper {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .headling__top {
+        font-size: 36px;
+    }
+
+    .headling__bottom {
+        margin-bottom: 32px;
+    }
+}
+

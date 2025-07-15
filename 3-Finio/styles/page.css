@@ -1,0 +1,110 @@
+.tariff {
+    padding: 93px 40px 48px 40px;
+    
+}
+
+@media (max-width:820px) {
+    .tariff {
+            padding: 48px 24px 48px 24px;  
+         }
+}
+
+.tariff_per {
+    padding: 48px 38px 48px 40px;
+}
+
+.tariff__benefit {
+    font-weight: var(--font-weight-500);
+    font-size: 15px;
+    line-height: var(--line-height-140);
+    color: var(--color-bg-white);
+    border-radius: 8px;
+    padding: 4px 14px;
+    max-width: 124px;
+    height: 29px;
+    background: #1abc9c;
+}
+
+.tariff__h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 32px;
+    line-height: var(--line-height-120);
+    color: var(--color-text-black);
+
+}
+.tariff__desc {
+    font-weight: var(--font-weight-500);
+    font-size: 17px;
+    line-height: var(--line-height-140);
+    color: var(--color-text-grey);
+}
+
+.tariff__h2--act {
+    color: var(--color-bg-white);
+}
+
+.percent {
+    font-weight: 800;
+}
+
+.tariff-card {
+    border-radius: 8px;
+    box-shadow: 0 0 32px 0 rgba(78, 93, 124, 0.16);
+}
+
+.tariff_active {
+    background: var(--color-bg-blue);
+    color: var(--color-bg-white);
+}
+
+
+
+.tariff__desc--act {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tariff__header {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.tariff__header--act {
+    margin-bottom: 32px;
+}
+
+
+.tariff__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+    gap: 16px;
+    font-weight: var(--font-weight-500);
+    font-size: 17px;
+    line-height: var(--line-height-120);
+    color: #4e5d7c;
+    margin-bottom: 40px;
+}
+
+.tariff__body--act {
+    color: var(--color-bg-white);
+    margin-bottom: 34px;
+}
+
+.yellow-tag {
+    border-radius: 8px;
+    width: 99px;
+    height: 36px;
+    background: #ffc736;
+    padding: 8px 16px;
+}
+
+.tariff__line {
+    border-bottom: 1px solid rgba(78, 93, 124, 0.08);
+    grid-column: 1/3;
+}

@@ -1,0 +1,38 @@
+:root {
+    --font-weight-800: 800;
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+    --color-bg-white: #FFFFFF;
+    --color-bg-blue: #357efe;
+    --color-bg-button-hover: #2862c6;
+    --color-bg-dark: #1a1d25;
+    --color-text-black: #000000;
+    --color-text-grey: rgba(78, 93, 124, 0.5);
+    --line-height-120: 120%;
+    --line-height-140: 140%;
+    --layout-width: 1392px;
+
+
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background: var(--color-bg);
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+h2,p {
+    margin: 0;
+}
