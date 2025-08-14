@@ -1,0 +1,115 @@
+.footer {
+    background: var(--color-bg-dark);
+    margin: 0;
+}
+
+.footer__wrapper {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 80px 24px 39px;
+}
+
+.footer-head {
+    display: flex;
+    gap: 123px;
+    margin-bottom: 28px;
+}
+
+.footer-block__logo {
+    max-width: 283px;
+}
+
+.footer-block {
+    font-weight: var(--font-weight-500);
+    font-size: 17px;
+    line-height: var(--line-height-140);
+    color: var(--color-text-grey-07);
+}
+
+.footer-block__item {
+    margin-top: 16px;
+}
+
+.footer-main {
+    display: flex;
+    gap: 151px;
+}
+
+.footer-menu-item {
+    font-weight: var(--font-weight-500);
+    font-size: 17px;
+    line-height: var(--line-height-140);
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.footer-menu-list {
+    margin: 0;
+}
+
+.footer-menu-link {
+    color: var(--color-text-grey-05);
+}
+
+.footer-menu-link:hover {
+    color: var(--color-white);
+}
+
+.footer-block__mail {
+    color: var(--color-text-grey-05);
+}
+
+.footer-block__mail:hover {
+    color: var(--color-white);
+}
+
+.footer-contact {
+    margin: 0;
+}
+
+.footer-contact_item {
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.footer__copywrite {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copywrite__text {
+    font-weight: var(--font-weight-500);
+    font-size: 17px;
+    line-height: var(--line-height-140);
+    color: var(--color-text-grey-07);
+}
+
+@media (max-width: 1400px) {
+    .footer-head {
+        flex-direction: column;
+        gap: 28px;
+        margin-bottom: 36px;
+    }
+    .footer-block__logo {
+        margin-bottom: 12px;
+    }
+    .footer-main {
+        flex-direction: column;
+    }
+    .footer-block__conact {
+        margin-top: 8px;
+    }
+    .footer__copywrite {
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__wrapper {
+        padding: 64px 24px 64px;
+    }
+    .footer-main {
+        gap: 48px;
+    }
+}
