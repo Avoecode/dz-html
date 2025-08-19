@@ -14,7 +14,7 @@
     --color-text-grey-05: rgba(255, 255, 255, 0.5);
     --color-text-grey-06: rgba(255, 255, 255, 0.6);
     --color-text-grey-07: rgba(255, 255, 255, 0.7);
-    --color-text-grey-08:rgba(255, 255, 255, 0.8);
+    --color-text-grey-08: rgba(255, 255, 255, 0.8);
 
     --border-line-header: 1px solid #FFFFFF;
     --border-line: 1px solid #4E5D7C;
@@ -31,42 +31,52 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
+
 body {
     background: var(--color-bg);
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
     font-style: normal;
-   
+
 }
+
 html, body {
     overflow-x: hidden;
 }
+
 a {
     text-decoration: none;
 }
+
 a:hover {
     color: var(--color-white);
     opacity: 100%;
 }
+
 h1, h2, h3, p {
     margin: 0;
 }
+
 a {
     text-decoration: none;
 }
-a,button {
+
+a, button {
     transition-duration: var(--transition-duration);
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 ul {
     list-style: none;
     padding: 0;

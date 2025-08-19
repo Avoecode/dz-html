@@ -669,12 +669,6 @@
     padding: 4px 0;
 }
 
-.customer__img {
-    padding-left: 24px;
-}
-.customer__img img {
-   width: 647px;
-}
 @media (max-width:1200px) {
     .customer {
         flex-direction: column-reverse;
@@ -891,6 +885,7 @@
 .reviews {
     background-color: var(--color-blue);
     display: flex;
+    position: relative;
 }
 
 .reviews-box {
@@ -921,10 +916,6 @@
 .person-info__profession {
     font-size: 17px;
     font-weight: var(--font-weight-500);
-}
-
-.reviews-box__right {
-    position: relative;
 }
 
 .reviews-box__arrow {
