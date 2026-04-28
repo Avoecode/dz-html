@@ -8,34 +8,65 @@ menuItems.forEach((item) => {
 		e.preventDefault(); // Отменяем стандартное поведение ссылки
 
 		// Определяем, к какому разделу прокручивать
-        let targetId = '';//Создаём переменную для хранения ID раздела (пока пустую)
-        const text = item.textContent.trim();//Получаем текст ссылки и обрезаем лишние пробелы
-        
-        if (text === 'HTML и CSS') {
-            targetId = '#html-css';
-        } else if (text === 'Frontend') {
-            targetId = '#html-css'; // Можно направить в тот же раздел
-        } else if (text === 'Backend') {
-            targetId = '#backend';
-        }
+		let targetId = '';//Создаём переменную для хранения ID раздела (пока пустую)
+		const text = item.textContent.trim();//Получаем текст ссылки и обрезаем лишние пробелы
+
+		if (text === 'HTML и CSS') {
+			targetId = '#html-css';
+		} else if (text === 'Frontend') {
+			targetId = '#html-css'; // Можно направить в тот же раздел
+		} else if (text === 'Backend') {
+			targetId = '#backend';
+		}
 		// Плавная прокрутка
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+		const targetElement = document.querySelector(targetId);
+		if (targetElement) {
+			targetElement.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			});
+		}
 		// Обновляем активный пункт меню
-        updateActiveMenuItem(item);
+		updateActiveMenuItem(item);
 	})
 })
 // Функция для обновления активного пункта
 function updateActiveMenuItem(activeItem) {
-    menuItems.forEach(item => {
-        item.style.fontWeight = '400';
-        item.style.opacity = '0.7';
-    });
-    activeItem.style.fontWeight = '700';
-    activeItem.style.opacity = '1';
+	menuItems.forEach(item => {
+		item.style.fontWeight = '400';
+		item.style.opacity = '0.7';
+	});
+	activeItem.style.fontWeight = '700';
+	activeItem.style.opacity = '1';
 }
+
+const themeToggle = document.querySelector('.themetoggle');
+const body = document.body;
+
+function toggleTheme () {
+	 // Проверяем, есть ли класс dark-theme на body
+	 const isDark = body.classList.contains('dark-theme');
+
+	 if (isDark) {
+		body.classList.remove('dark-theme');
+		themeToggle.textContent = '🌞';
+		localStorage.setItem('theme', 'light');
+	 } else {
+		body.classList.add('dark-theme');
+		themeToggle.textContent = '🌙'
+		localStorage.setItem('theme', 'dark');
+	 }
+}
+// Навешиваем обработчик клика на кнопку
+themeToggle.addEventListener('click', toggleTheme);
+
+// При загрузке страницы восстановить тему из localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    body.classList.add('dark-theme');
+    themeToggle.textContent = '🌙';
+} else if (savedTheme === 'light') {
+    body.classList.remove('dark-theme');
+    themeToggle.textContent = '🌞';
+}
+
